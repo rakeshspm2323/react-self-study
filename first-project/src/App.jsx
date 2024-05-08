@@ -1,11 +1,12 @@
 import React from 'react'
-import Child from './components/props/props1/Child'
+import './App.css'
+import Card from './components/props/props2/Card';
 
 
 const App = () => {
   return (
     <div>
-      <Child userName='Rakesh' city='Noida' ></Child>
+      <Card></Card>
     </div>
   )
 }
