@@ -4,6 +4,7 @@ import hrithik from './assets/HRX.jpeg'
 import prabhas from './assets/Prabhas.jpg'
 import rk from './assets/R kapoor.avif'
 import Card from './components/props/props3/Card'
+import Child from './components/props/props_children/Child'
 
 
 
@@ -42,11 +43,17 @@ const App = () => {
 
 
   return (
-    <div className='flex items-center justify-center gap-[2rem] pt-12'>
+    <div className='flex items-center justify-center gap-[2rem] pt-[5]'>
       <Card user={actor1}></Card>
       <Card user={actor2}></Card>
       <Card user={actor3}></Card>
       
+
+      <Child user='props'>
+            <h1>Learing React</h1>
+            <h2>Learning Props children</h2>  
+            <h3>Thankyou</h3>
+      </Child>
     </div>
   )
 }
